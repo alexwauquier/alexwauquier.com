@@ -11,7 +11,7 @@ function Home() {
 
       {/* Hero Section */}
       <main className="flex  flex-1 flex-col items-center justify-center text-center">
-        <img src="/logo.svg" alt="Logo" className="h-24 mb-4 mx-auto w-24" />
+        <img src="/logo.svg" alt="Logo" className="h-24 mb-4 mx-auto w-24 z-20" />
         <h1 className="font-bold mb-2 text-4xl tracking-widest uppercase">
           Alex Wauquier
         </h1>

@@ -4,3 +4,27 @@
   font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
   background-color: #242424;
 }
+
+@layer components {
+  .nav-link {
+    display: inline-block;
+    position: relative;
+  }
+
+  .nav-link::after {
+    background-color: #9c59d1;
+    border-radius: 0.125rem;
+    bottom: 0;
+    content: "";
+    height: 4px;
+    left: 0;
+    position: absolute;
+    transition: width 300ms;
+    width: 0;
+  }
+
+  .nav-link.active::after,
+  .nav-link:hover::after {
+    width: 100%;
+  }
+}
