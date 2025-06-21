@@ -5,6 +5,10 @@
   background-color: #242424;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 @layer components {
   .nav-link {
     display: inline-block;

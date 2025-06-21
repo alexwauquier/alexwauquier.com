@@ -51,7 +51,7 @@ function Navbar() {
 
         {/* Desktop Nav */}
         <nav className="gap-6 h-8 hidden md:flex text-lg">
-          <a href="/" className={linkClass("home")}>
+          <a href="#home" className={linkClass("home")}>
             Accueil
           </a>
           <a href="#about" className={linkClass("about")}>
@@ -86,7 +86,7 @@ function Navbar() {
             <FiX className="h-8 w-8" />
           </button>
           <a
-            href="/"
+            href="#home"
             className="active:text-[#c4c4c4] hover:text-[#c4c4c4] transition"
             onClick={() => setMenuOpen(false)}
           >
