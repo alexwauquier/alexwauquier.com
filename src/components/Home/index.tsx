@@ -43,6 +43,7 @@ function Home() {
           <a
             href="mailto:contact@alexwauquier.com"
             className="bg-white p-2 rounded"
+            aria-label="Envoyer un mail à Alex"
           >
             <FaEnvelope size={24} />
           </a>
@@ -50,6 +51,7 @@ function Home() {
             href="https://github.com/alexwauquier"
             target="_blank"
             className="bg-white p-2 rounded"
+            aria-label="Voir mon profil GitHub"
           >
             <FaGithub size={24} />
           </a>
@@ -57,6 +59,7 @@ function Home() {
             href="https://www.linkedin.com/in/alexwauquier/"
             target="_blank"
             className="bg-white p-2 rounded"
+            aria-label="Voir mon profil LinkedIn"
           >
             <FaLinkedin size={24} />
           </a>

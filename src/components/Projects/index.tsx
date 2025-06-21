@@ -30,25 +30,33 @@ function Projects() {
                   <FaRegFolder className="text-[#7f7f7f] text-2xl" />
                   <div className="flex gap-3">
                     {project.external && (
-                      <a href={project.external} target="_blank">
+                      <a
+                        href={project.external}
+                        aria-label={`Voir le projet ${project.title}`}
+                        target="_blank"
+                      >
                         <FaExternalLinkAlt className="hover:text-[#9c59d1] text-[#7f7f7f] text-2xl" />
                       </a>
                     )}
                     {project.github && (
-                      <a href={project.github} target="_blank">
+                      <a
+                        href={project.github}
+                        aria-label={`Voir le code source du projet ${project.title} sur GitHub`}
+                        target="_blank"
+                      >
                         <FaGithub className="hover:text-[#9c59d1] text-[#7f7f7f] text-2xl" />
                       </a>
                     )}
                   </div>
                 </div>
-                <h3 className="font-semibold mb-2 text-black text-xl">
+                <h2 className="font-semibold mb-2 text-black text-xl">
                   {project.title}
-                </h3>
+                </h2>
                 <p className="text-black text-left text-sm">
                   {project.description}
                 </p>
               </div>
-              <ul className="flex flex-wrap gap-2 mt-4 text-[#7f7f7f] text-xs">
+              <ul className="flex flex-wrap gap-2 mt-4 text-[#707070] text-xs">
                 {project.tags.map((tag, i) => (
                   <li key={i}>{tag}</li>
                 ))}

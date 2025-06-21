@@ -29,6 +29,7 @@ function Navbar() {
         <button
           onClick={() => setMenuOpen(true)}
           className="block md:hidden"
+          aria-label="Ouvrir le menu de navigation"
         >
           <FiMenu className="h-8 w-8" />
         </button>
@@ -40,6 +41,7 @@ function Navbar() {
           <button
             onClick={() => setMenuOpen(false)}
             className="absolute right-6 text-2xl text-white top-6"
+            aria-label="Fermer le menu de navigation"
           >
             <FiX className="h-8 w-8" />
           </button>
