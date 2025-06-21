@@ -87,28 +87,28 @@ function Navbar() {
           </button>
           <a
             href="/"
-            className="hover:text-[#c4c4c4] transition"
+            className="active:text-[#c4c4c4] hover:text-[#c4c4c4] transition"
             onClick={() => setMenuOpen(false)}
           >
             Accueil
           </a>
           <a
             href="#about"
-            className="hover:text-[#c4c4c4] transition"
+            className="active:text-[#c4c4c4] hover:text-[#c4c4c4] transition"
             onClick={() => setMenuOpen(false)}
           >
             À propos
           </a>
           <a
             href="#projects"
-            className="hover:text-[#c4c4c4] transition"
+            className="active:text-[#c4c4c4] hover:text-[#c4c4c4] transition"
             onClick={() => setMenuOpen(false)}
           >
             Projets
           </a>
           <a
             href="#contact"
-            className="hover:text-[#c4c4c4] transition"
+            className="active:text-[#c4c4c4] hover:text-[#c4c4c4] transition"
             onClick={() => setMenuOpen(false)}
           >
             Contact

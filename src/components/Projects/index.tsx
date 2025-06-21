@@ -23,7 +23,7 @@ function Projects() {
           {visibleProjects.map((project, index) => (
             <div
               key={index}
-              className="bg-white hover:-translate-y-1 p-6 rounded shadow transition transform"
+              className="active:-translate-y-1 bg-white hover:-translate-y-1 p-6 rounded shadow transition transform"
             >
               <div>
                 <div className="flex justify-between mb-4">
@@ -35,7 +35,7 @@ function Projects() {
                         aria-label={`Voir le projet ${project.title}`}
                         target="_blank"
                       >
-                        <FaExternalLinkAlt className="hover:text-[#9c59d1] text-[#7f7f7f] text-2xl" />
+                        <FaExternalLinkAlt className="active:text-[#9c59d1] hover:text-[#9c59d1] text-[#7f7f7f] text-2xl" />
                       </a>
                     )}
                     {project.github && (
@@ -44,7 +44,7 @@ function Projects() {
                         aria-label={`Voir le code source du projet ${project.title} sur GitHub`}
                         target="_blank"
                       >
-                        <FaGithub className="hover:text-[#9c59d1] text-[#7f7f7f] text-2xl" />
+                        <FaGithub className="active:text-[#9c59d1] hover:text-[#9c59d1] text-[#7f7f7f] text-2xl" />
                       </a>
                     )}
                   </div>
@@ -68,7 +68,7 @@ function Projects() {
         {projects.length > 6 && (
           <button
             onClick={() => setShowAll(!showAll)}
-            className="border duration-200 hover:bg-white hover:text-black mt-12 px-6 py-3 rounded transition"
+            className="active:bg-white active:text-black border duration-200 hover:bg-white hover:text-black mt-12 px-6 py-3 rounded transition"
           >
             {showAll ? "Voir moins" : "Voir plus"}
           </button>

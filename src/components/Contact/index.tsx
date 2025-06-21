@@ -30,7 +30,7 @@ function Contact() {
         <p className="text-lg">contact@alexwauquier.com</p>
         <button
           onClick={copyEmail}
-          className="text-[#c4c4c4] hover:text-white transition"
+          className="active:text-white text-[#c4c4c4] hover:text-white transition"
           aria-label="Copier l'adresse email"
         >
           {copied ? <FiCheck size={20} /> : <FiCopy size={20} />}
@@ -39,7 +39,7 @@ function Contact() {
 
       <a
         href="mailto:contact@alexwauquier.com"
-        className="border duration-200 hover:bg-white hover:text-black mt-2 px-6 py-3 rounded transition"
+        className="active:bg-white active:text-black border duration-200 hover:bg-white hover:text-black mt-2 px-6 py-3 rounded transition"
       >
         Écrire un message
       </a>
