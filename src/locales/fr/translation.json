@@ -1,0 +1,75 @@
+{
+  "nav": {
+    "home": "Accueil",
+    "about": "À propos",
+    "projects": "Projets",
+    "contact": "Contact",
+    "aria": {
+      "openMenu": "Ouvrir le menu de navigation",
+      "closeMenu": "Fermer le menu de navigation"
+    }
+  },
+  "home": {
+    "subtitle": "Future ingénieure du numérique",
+    "about": "À propos",
+    "projects": "Mes projets",
+    "contact": "Me contacter",
+    "github": "Mon GitHub",
+    "githubCall": "Découvrez mes projets GitHub !",
+    "aria": {
+      "sendEmail": "Envoyer un mail à Alex",
+      "viewGithub": "Voir mon profil GitHub",
+      "viewLinkedin": "Voir mon profil LinkedIn"
+    }
+  },
+  "about": {
+    "title": "À propos",
+    "paragraph1": "Salut, je suis Alex, diplômée d'un BTS CIEL spécialisé en cybersécurité, informatique et réseaux. Curieuse, sérieuse et toujours motivée par les défis techniques, je suis passionnée par tout ce qui touche au numérique. J'ai commencé par monter mon propre ordinateur, puis j'ai exploré le développement, le réseau, la cybersécurité et bien d'autres choses jusqu'à trouver ce que j'aime : comprendre, construire et expérimenter.",
+    "paragraph2": "Grâce à mes stages et à mon investissement personnel, j'ai pu toucher à des domaines variés comme la conception de sites web, la virtualisation ou encore la gestion de serveurs. Je poursuis aujourd'hui mon parcours en préparant une entrée en école d'ingénieur à JUNIA ISEN en alternance avec l'envie de contribuer à des projets concrets, utiles et bien pensés.",
+    "paragraph3": "En-dehors de tout ça, je profite de mon temps libre pour faire du modélisme (surtout du drone FPV), bidouiller de l'électronique ou monter les PC de mes amis."
+  },
+  "projects": {
+    "title": "Mes projets",
+    "subtitle": "Voici quelques-uns de mes projets",
+    "showMore": "Voir plus",
+    "showLess": "Voir moins",
+    "aria": {
+      "viewProject": "Voir le projet {{title}}",
+      "viewSource": "Voir le code source du projet {{title}} sur GitHub"
+    },
+    "items": {
+      "portfolio": {
+        "title": "Mon Portfolio",
+        "description": "Un site personnel conçu pour mettre en valeur mon profil et mes différents projets."
+      },
+      "smartHotelApi": {
+        "title": "Smart Hotel - API",
+        "description": "Une API RESTful conçue dans le cadre d'un projet de fin de BTS pour gérer les commandes du bar et les capteurs d'un hôtel connecté. Ce backend alimente à la fois l'application mobile et l'application web du projet Smart Hotel."
+      },
+      "smartHotelMobileApp": {
+        "title": "Smart Hotel - Mobile App",
+        "description": "Application mobile qui permet aux clients de passer des commandes et aux employés de les gérer. L'application interagit avec une API externe pour récupérer et envoyer les données."
+      },
+      "smartHotelWebApp": {
+        "title": "Smart Hotel - Web App",
+        "description": "Application web conçue pour gérer les commandes du bar et les données des capteurs d'un hôtel connecté. Elle fournit une interface intuitive pour les employés via navigateur, en interaction avec une API externe."
+      },
+      "ttgoLora32": {
+        "title": "TTGO LoRa32",
+        "description": "Prototype permettant d'envoyer des messages via le protocole LoRaWAN à l'aide de la carte LoRa32. Ce projet explore les bases de la communication longue portée à faible consommation dans le contexte IoT."
+      },
+      "serverRoomMonitoring": {
+        "title": "Supervision Salle Serveurs",
+        "description": "Projet de fin de première année de BTS consistant à développer un système de surveillance environnementale pour une salle de serveurs. L'application permet de collecter, stocker et visualiser la température et l'humidité."
+      }
+    }
+  },
+  "contact": {
+    "title": "Contactez-moi",
+    "description": "Actuellement à la recherche d'une alternance pour intégrer une école d'ingénieur, je serais ravie d'échanger avec vous. Que ce soit pour une opportunité, une question ou simplement discuter, n'hésitez pas à me contacter !",
+    "sendMessage": "Écrire un message",
+    "aria": {
+      "copyEmail": "Copier l'adresse email"
+    }
+  }
+}

@@ -1,0 +1,75 @@
+{
+  "about": {
+    "title": "About",
+    "paragraph1": "Hi, I'm Alex, a graduate with a 2-year degree in cybersecurity, computer science and networks. Curious, serious and always motivated by technical challenges, I'm passionate about all things related to IT. I started by building my own computer, then explored development, networks, cybersecurity and much more until I found what I love: understanding, building and experimenting.",
+    "paragraph2": "Thanks to my internships and personal investment, I've been able to work in a wide variety of fields such as web conception, virtualization and server management. Today, I'm continuing my studies by preparing to enter engineering school at JUNIA ISEN on a sandwich course, with the desire to contribute to concrete, useful and well-thought-out projects.",
+    "paragraph3": "Outside of all that, I spend my free time in model making (especially FPV drones), working on electronics or building the PCs of my friends."
+  },
+  "contact": {
+    "title": "Contact Me",
+    "description": "I'm currently looking for a work-study placement to join an engineering school, and would be delighted to talk to you. Whether it's for an opportunity, a question or just a chat, don't hesitate to contact me!",
+    "sendMessage": "Send a message",
+    "aria": {
+      "copyEmail": "Copy email address"
+    }
+  },
+  "home": {
+    "subtitle": "Future digital engineer",
+    "about": "About me",
+    "projects": "My projects",
+    "contact": "Contact me",
+    "github": "My GitHub",
+    "githubCall": "Check out my GitHub projects!",
+    "aria": {
+      "sendEmail": "Send an email to Alex",
+      "viewGithub": "View my GitHub profile",
+      "viewLinkedin": "View my LinkedIn profile"
+    }
+  },
+  "nav": {
+    "home": "Home",
+    "about": "About",
+    "projects": "Projects",
+    "contact": "Contact",
+    "aria": {
+      "openMenu": "Open navigation menu",
+      "closeMenu": "Close navigation menu"
+    }
+  },
+  "projects": {
+    "title": "My Projects",
+    "subtitle": "Here are some of my projects",
+    "showMore": "Show more",
+    "showLess": "Show less",
+    "aria": {
+      "viewProject": "View project {{title}}",
+      "viewSource": "View source code of {{title}} on GitHub"
+    },
+    "items": {
+      "portfolio": {
+        "title": "My Portfolio",
+        "description": "A personal website designed to showcase my profile and various projects."
+      },
+      "smartHotelApi": {
+        "title": "Smart Hotel - API",
+        "description": "A RESTful API designed as part of a final-year project to manage bar orders and sensors in a connected hotel. This backend feeds both the mobile application and the web application of the Smart Hotel project."
+      },
+      "smartHotelMobileApp": {
+        "title": "Smart Hotel - Mobile App",
+        "description": "Mobile application that enables customers to place orders and employees to manage them. The application interacts with an external API to retrieve and send data."
+      },
+      "smartHotelWebApp": {
+        "title": "Smart Hotel - Web App",
+        "description": "Web application designed to manage bar orders and sensor data in a connected hotel. It provides an intuitive browser-based interface for employees, interacting with an external API."
+      },
+      "ttgoLora32": {
+        "title": "TTGO LoRa32",
+        "description": "Prototype for sending messages via the LoRaWAN protocol using the LoRa32 card. This project explores the basics of long-range, low-power communication in the IoT context."
+      },
+      "serverRoomMonitoring": {
+        "title": "Server Room Monitoring",
+        "description": "End-of-first-year project for a two-year degree to develop an environmental monitoring system for a server room. The application collects, stores and displays temperature and humidity data."
+      }
+    }
+  }
+}

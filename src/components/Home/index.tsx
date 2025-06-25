@@ -1,7 +1,10 @@
 import { FaGithub, FaLinkedin, FaEnvelope } from "react-icons/fa"
+import { useTranslation } from "react-i18next"
 import Navbar from "../Navbar"
 
 function Home() {
+  const { t } = useTranslation()
+
   return (
     <section
       id="home"
@@ -20,7 +23,7 @@ function Home() {
           Alex Wauquier
         </h1>
         <h2 className="mb-6 text-xl uppercase">
-          Future ingénieure du numérique
+          {t("home.subtitle")}
         </h2>
 
         <div className="gap-4 grid grid-cols-1 md:grid-cols-2 mt-6 text-black text-lg uppercase w-full">
@@ -28,26 +31,26 @@ function Home() {
             className="active:bg-[#242424] active:text-white bg-white border-2 border-white font-semibold hover:bg-[#242424] hover:text-white px-8 py-6 rounded-lg transition"
             href="#about"
           >
-            À propos
+            {t("home.about")}
           </a>
           <a
             className="active:bg-[#242424] active:text-white bg-white border-2 border-white font-semibold hover:bg-[#242424] hover:text-white px-8 py-6 rounded-lg transition"
             href="#projects"
           >
-            Mes projets
+            {t("home.projects")}
           </a>
           <a
             className="active:bg-[#242424] active:text-white bg-white border-2 border-white font-semibold hover:bg-[#242424] hover:text-white px-8 py-6 rounded-lg transition"
             href="#contact"
           >
-            Me contacter
+            {t("home.contact")}
           </a>
           <a
             className="active:bg-[#242424] active:text-white bg-white border-2 border-white font-semibold hover:bg-[#242424] hover:text-white px-8 py-6 rounded-lg transition"
             href="https://github.com/alexwauquier"
             target="_blank"
           >
-            Mon GitHub
+            {t("home.github")}
           </a>
         </div>
 
@@ -56,7 +59,7 @@ function Home() {
           <a
             href="mailto:contact@alexwauquier.com"
             className="active:-translate-y-1 active:text-[#9c59d1] bg-white hover:-translate-y-1 hover:text-[#9c59d1] p-2 rounded transition"
-            aria-label="Envoyer un mail à Alex"
+            aria-label={t("home.aria.sendEmail")}
           >
             <FaEnvelope size={24} />
           </a>
@@ -64,7 +67,7 @@ function Home() {
             href="https://github.com/alexwauquier"
             target="_blank"
             className="active:-translate-y-1 active:text-[#9c59d1] bg-white hover:-translate-y-1 hover:text-[#9c59d1] p-2 rounded transition"
-            aria-label="Voir mon profil GitHub"
+            aria-label={t("home.aria.viewGithub")}
           >
             <FaGithub size={24} />
           </a>
@@ -72,14 +75,14 @@ function Home() {
             href="https://www.linkedin.com/in/alexwauquier/"
             target="_blank"
             className="active:-translate-y-1 active:text-[#9c59d1] bg-white hover:-translate-y-1 hover:text-[#9c59d1] p-2 rounded transition"
-            aria-label="Voir mon profil LinkedIn"
+            aria-label={t("home.aria.viewLinkedin")}
           >
             <FaLinkedin size={24} />
           </a>
         </div>
 
         <p className="mt-10 text-xl uppercase">
-          Découvrez mes projets GitHub !
+          {t("home.githubCall")}
         </p>
       </main>
     </section>

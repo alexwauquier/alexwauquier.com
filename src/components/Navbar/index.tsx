@@ -1,9 +1,12 @@
 import { useState, useEffect } from "react"
+import { useTranslation } from "react-i18next"
 import { FiMenu, FiX } from "react-icons/fi"
+import LanguageSelector from "./LanguageSelector"
 
 const sections = ["home", "about", "projects", "contact"]
 
 function Navbar() {
+  const { t } = useTranslation()
   const [menuOpen, setMenuOpen] = useState(false)
   const [activeSection, setActiveSection] = useState<string | null>("")
 
@@ -52,24 +55,25 @@ function Navbar() {
         {/* Desktop Nav */}
         <nav className="gap-6 h-8 hidden md:flex text-lg">
           <a href="#home" className={linkClass("home")}>
-            Accueil
+            {t("nav.home")}
           </a>
           <a href="#about" className={linkClass("about")}>
-            À propos
+            {t("nav.about")}
           </a>
           <a href="#projects" className={linkClass("projects")}>
-            Projets
+            {t("nav.projects")}
           </a>
           <a href="#contact" className={linkClass("contact")}>
-            Contact
+            {t("nav.contact")}
           </a>
+          <LanguageSelector />
         </nav>
 
         {/* Mobile Menu Icon */}
         <button
           onClick={() => setMenuOpen(true)}
           className="block md:hidden"
-          aria-label="Ouvrir le menu de navigation"
+          aria-label={t("nav.aria.openMenu")}
         >
           <FiMenu className="h-8 w-8" />
         </button>
@@ -81,7 +85,7 @@ function Navbar() {
           <button
             onClick={() => setMenuOpen(false)}
             className="absolute right-6 text-2xl text-white top-6"
-            aria-label="Fermer le menu de navigation"
+            aria-label={t("nav.aria.closeMenu")}
           >
             <FiX className="h-8 w-8" />
           </button>
@@ -90,29 +94,30 @@ function Navbar() {
             className="active:text-[#c4c4c4] hover:text-[#c4c4c4] transition"
             onClick={() => setMenuOpen(false)}
           >
-            Accueil
+            {t("nav.home")}
           </a>
           <a
             href="#about"
             className="active:text-[#c4c4c4] hover:text-[#c4c4c4] transition"
             onClick={() => setMenuOpen(false)}
           >
-            À propos
+            {t("nav.about")}
           </a>
           <a
             href="#projects"
             className="active:text-[#c4c4c4] hover:text-[#c4c4c4] transition"
             onClick={() => setMenuOpen(false)}
           >
-            Projets
+            {t("nav.projects")}
           </a>
           <a
             href="#contact"
             className="active:text-[#c4c4c4] hover:text-[#c4c4c4] transition"
             onClick={() => setMenuOpen(false)}
           >
-            Contact
+            {t("nav.contact")}
           </a>
+          <LanguageSelector />
         </div>
       )}
     </header>

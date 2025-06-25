@@ -1,8 +1,10 @@
 import { useState } from "react"
+import { useTranslation } from "react-i18next"
 import { FaExternalLinkAlt, FaGithub, FaRegFolder } from "react-icons/fa"
 import projects from "../../data/projects"
 
 function Projects() {
+  const { t } = useTranslation()
   const [showAll, setShowAll] = useState(false)
   const visibleProjects = showAll ? projects : projects.slice(0, 6)
 
@@ -13,11 +15,9 @@ function Projects() {
     >
       <div className="max-w-6xl mx-auto text-center">
         <h1 className="font-bold mb-8 text-4xl tracking-wide uppercase">
-          Mes projets
+          {t("projects.title")}
         </h1>
-        <p className="mb-12 text-[#c4c4c4]">
-          Voici quelques-uns de mes projets
-        </p>
+        <p className="mb-12 text-[#c4c4c4]">{t("projects.subtitle")}</p>
 
         <div className="gap-6 grid lg:grid-cols-3 sm:grid-cols-2">
           {visibleProjects.map((project, index) => (
@@ -32,7 +32,9 @@ function Projects() {
                     {project.external && (
                       <a
                         href={project.external}
-                        aria-label={`Voir le projet ${project.title}`}
+                        aria-label={t("projects.aria.viewProject", {
+                          title: t(project.titleKey),
+                        })}
                         target="_blank"
                       >
                         <FaExternalLinkAlt className="active:text-[#9c59d1] hover:text-[#9c59d1] text-[#7f7f7f] text-2xl" />
@@ -41,7 +43,9 @@ function Projects() {
                     {project.github && (
                       <a
                         href={project.github}
-                        aria-label={`Voir le code source du projet ${project.title} sur GitHub`}
+                        aria-label={t("projects.aria.viewSource", {
+                          title: t(project.titleKey),
+                        })}
                         target="_blank"
                       >
                         <FaGithub className="active:text-[#9c59d1] hover:text-[#9c59d1] text-[#7f7f7f] text-2xl" />
@@ -50,10 +54,10 @@ function Projects() {
                   </div>
                 </div>
                 <h2 className="font-semibold mb-2 text-black text-xl">
-                  {project.title}
+                  {t(project.titleKey)}
                 </h2>
                 <p className="text-black text-left text-sm">
-                  {project.description}
+                  {t(project.descriptionKey)}
                 </p>
               </div>
               <ul className="flex flex-wrap gap-2 mt-4 text-[#707070] text-xs">
@@ -70,7 +74,7 @@ function Projects() {
             onClick={() => setShowAll(!showAll)}
             className="active:bg-white active:text-black border duration-200 hover:bg-white hover:text-black mt-12 px-6 py-3 rounded transition"
           >
-            {showAll ? "Voir moins" : "Voir plus"}
+            {showAll ? t("projects.showLess") : t("projects.showMore")}
           </button>
         )}
       </div>
