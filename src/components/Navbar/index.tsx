@@ -1,44 +1,44 @@
-import { useState, useEffect } from "react"
-import { useTranslation } from "react-i18next"
-import { FiMenu, FiX } from "react-icons/fi"
-import LanguageSelector from "./LanguageSelector"
+import { useState, useEffect } from "react";
+import { useTranslation } from "react-i18next";
+import { FiMenu, FiX } from "react-icons/fi";
+import LanguageSelector from "./LanguageSelector";
 
-const sections = ["home", "about", "projects", "contact"]
+const sections = ["home", "about", "projects", "contact"];
 
 function Navbar() {
-  const { t } = useTranslation()
-  const [menuOpen, setMenuOpen] = useState(false)
-  const [activeSection, setActiveSection] = useState<string | null>("")
+  const { t } = useTranslation();
+  const [menuOpen, setMenuOpen] = useState(false);
+  const [activeSection, setActiveSection] = useState<string | null>("");
 
   useEffect(() => {
-    const observers: IntersectionObserver[] = []
+    const observers: IntersectionObserver[] = [];
 
     sections.forEach((id) => {
-      const section = document.getElementById(id)
-      if (!section) return
+      const section = document.getElementById(id);
+      if (!section) return;
 
       const observer = new IntersectionObserver(
         ([entry]) => {
           if (entry.isIntersecting) {
-            setActiveSection(id)
+            setActiveSection(id);
           }
         },
-        { threshold: 0.5 }
-      )
+        { threshold: 0.5 },
+      );
 
-      observer.observe(section)
-      observers.push(observer)
-    })
+      observer.observe(section);
+      observers.push(observer);
+    });
 
     return () => {
-      observers.forEach((observer) => observer.disconnect())
-    }
-  }, [])
+      observers.forEach((observer) => observer.disconnect());
+    };
+  }, []);
 
   const linkClass = (id: string) =>
     `nav-link hover:text-[#c4c4c4] transition ${
       activeSection === id ? "active" : ""
-    }`
+    }`;
 
   return (
     <header className="bg-[#242424c0] fixed left-0 px-6 top-0 w-full z-10">
@@ -121,7 +121,7 @@ function Navbar() {
         </div>
       )}
     </header>
-  )
+  );
 }
 
-export default Navbar
+export default Navbar;

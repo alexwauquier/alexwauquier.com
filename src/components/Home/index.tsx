@@ -1,9 +1,9 @@
-import { FaGithub, FaLinkedin, FaEnvelope } from "react-icons/fa"
-import { useTranslation } from "react-i18next"
-import Navbar from "../Navbar"
+import { FaGithub, FaLinkedin, FaEnvelope } from "react-icons/fa";
+import { useTranslation } from "react-i18next";
+import Navbar from "../Navbar";
 
 function Home() {
-  const { t } = useTranslation()
+  const { t } = useTranslation();
 
   return (
     <section
@@ -22,9 +22,7 @@ function Home() {
         <h1 className="font-bold mb-2 text-4xl tracking-widest uppercase">
           Alex Wauquier
         </h1>
-        <h2 className="mb-6 text-xl uppercase">
-          {t("home.subtitle")}
-        </h2>
+        <h2 className="mb-6 text-xl uppercase">{t("home.subtitle")}</h2>
 
         <div className="gap-4 grid grid-cols-1 md:grid-cols-2 mt-6 text-black text-lg uppercase w-full">
           <a
@@ -81,12 +79,10 @@ function Home() {
           </a>
         </div>
 
-        <p className="mt-10 text-xl uppercase">
-          {t("home.githubCall")}
-        </p>
+        <p className="mt-10 text-xl uppercase">{t("home.githubCall")}</p>
       </main>
     </section>
-  )
+  );
 }
 
-export default Home
+export default Home;

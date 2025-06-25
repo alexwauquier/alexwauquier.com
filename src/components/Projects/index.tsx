@@ -1,12 +1,12 @@
-import { useState } from "react"
-import { useTranslation } from "react-i18next"
-import { FaExternalLinkAlt, FaGithub, FaRegFolder } from "react-icons/fa"
-import projects from "../../data/projects"
+import { useState } from "react";
+import { useTranslation } from "react-i18next";
+import { FaExternalLinkAlt, FaGithub, FaRegFolder } from "react-icons/fa";
+import projects from "../../data/projects";
 
 function Projects() {
-  const { t } = useTranslation()
-  const [showAll, setShowAll] = useState(false)
-  const visibleProjects = showAll ? projects : projects.slice(0, 6)
+  const { t } = useTranslation();
+  const [showAll, setShowAll] = useState(false);
+  const visibleProjects = showAll ? projects : projects.slice(0, 6);
 
   return (
     <section
@@ -79,7 +79,7 @@ function Projects() {
         )}
       </div>
     </section>
-  )
+  );
 }
 
-export default Projects
+export default Projects;

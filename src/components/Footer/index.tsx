@@ -1,4 +1,4 @@
-import { FaGithub, FaLinkedin, FaEnvelope } from "react-icons/fa"
+import { FaGithub, FaLinkedin, FaEnvelope } from "react-icons/fa";
 
 function Footer() {
   return (
@@ -37,7 +37,7 @@ function Footer() {
         </p>
       </footer>
     </section>
-  )
+  );
 }
 
-export default Footer
+export default Footer;

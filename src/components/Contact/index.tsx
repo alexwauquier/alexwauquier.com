@@ -1,16 +1,16 @@
-import { useState } from "react"
-import { useTranslation } from "react-i18next"
-import { FiCheck, FiCopy } from "react-icons/fi"
+import { useState } from "react";
+import { useTranslation } from "react-i18next";
+import { FiCheck, FiCopy } from "react-icons/fi";
 
 function Contact() {
-  const { t } = useTranslation()
-  const [copied, setCopied] = useState(false)
+  const { t } = useTranslation();
+  const [copied, setCopied] = useState(false);
 
   const copyEmail = () => {
-    navigator.clipboard.writeText("contact@alexwauquier.com")
-    setCopied(true)
-    setTimeout(() => setCopied(false), 2000)
-  }
+    navigator.clipboard.writeText("contact@alexwauquier.com");
+    setCopied(true);
+    setTimeout(() => setCopied(false), 2000);
+  };
 
   return (
     <section
@@ -43,7 +43,7 @@ function Contact() {
         {t("contact.sendMessage")}
       </a>
     </section>
-  )
+  );
 }
 
-export default Contact
+export default Contact;

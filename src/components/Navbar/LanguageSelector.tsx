@@ -1,19 +1,19 @@
-import { useTranslation } from "react-i18next"
-import { useEffect, useRef, useState } from "react"
-import { FaGlobe } from "react-icons/fa"
+import { useTranslation } from "react-i18next";
+import { useEffect, useRef, useState } from "react";
+import { FaGlobe } from "react-icons/fa";
 
 const languages = [
   { code: "en", label: "EN" },
   { code: "fr", label: "FR" },
-]
+];
 
 export default function LanguageSelector() {
-  const { i18n } = useTranslation()
-  const [open, setOpen] = useState(false)
-  const containerRef = useRef<HTMLDivElement>(null)
+  const { i18n } = useTranslation();
+  const [open, setOpen] = useState(false);
+  const containerRef = useRef<HTMLDivElement>(null);
 
   const current =
-    languages.find((lang) => lang.code === i18n.language) || languages[0]
+    languages.find((lang) => lang.code === i18n.language) || languages[0];
 
   useEffect(() => {
     const handleClickOutside = (event: MouseEvent) => {
@@ -21,18 +21,18 @@ export default function LanguageSelector() {
         containerRef.current &&
         !containerRef.current.contains(event.target as Node)
       ) {
-        setOpen(false)
+        setOpen(false);
       }
-    }
+    };
 
     if (open) {
-      document.addEventListener("mousedown", handleClickOutside)
+      document.addEventListener("mousedown", handleClickOutside);
     }
 
     return () => {
-      document.removeEventListener("mousedown", handleClickOutside)
-    }
-  }, [open])
+      document.removeEventListener("mousedown", handleClickOutside);
+    };
+  }, [open]);
 
   return (
     <div ref={containerRef} className="relative text-white">
@@ -50,8 +50,8 @@ export default function LanguageSelector() {
             <li key={code}>
               <button
                 onClick={() => {
-                  i18n.changeLanguage(code)
-                  setOpen(false)
+                  i18n.changeLanguage(code);
+                  setOpen(false);
                 }}
                 className="hover:bg-white/10 px-4 py-2 text-left w-full"
               >
@@ -62,5 +62,5 @@ export default function LanguageSelector() {
         </ul>
       )}
     </div>
-  )
+  );
 }

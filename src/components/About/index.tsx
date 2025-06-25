@@ -1,7 +1,7 @@
-import { useTranslation } from "react-i18next"
+import { useTranslation } from "react-i18next";
 
 function About() {
-  const { t } = useTranslation()
+  const { t } = useTranslation();
 
   return (
     <section
@@ -20,7 +20,7 @@ function About() {
         </div>
       </div>
     </section>
-  )
+  );
 }
 
-export default About
+export default About;

@@ -1,9 +1,9 @@
 export interface Project {
-  titleKey: string
-  descriptionKey: string
-  tags: string[]
-  github?: string
-  external?: string
+  titleKey: string;
+  descriptionKey: string;
+  tags: string[];
+  github?: string;
+  external?: string;
 }
 
 const projects: Project[] = [
@@ -45,6 +45,6 @@ const projects: Project[] = [
     github:
       "https://github.com/alexwauquier/projet-iot-supervision-salle-serveurs",
   },
-]
+];
 
-export default projects
+export default projects;
