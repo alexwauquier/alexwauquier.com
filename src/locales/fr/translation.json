@@ -1,17 +1,17 @@
 {
-  "nav": {
-    "home": "Accueil",
-    "about": "À propos",
-    "projects": "Projets",
-    "contact": "Contact",
-    "aria": {
-      "openMenu": "Ouvrir le menu de navigation",
-      "closeMenu": "Fermer le menu de navigation"
-    }
+  "about": {
+    "title": "À propos",
+    "paragraph1": "Salut, je suis Alex, diplômée d'un BTS CIEL spécialisé en cybersécurité, informatique et réseaux. Curieuse, sérieuse et toujours motivée par les défis techniques, je suis passionnée par tout ce qui touche au numérique. J'ai commencé par monter mon propre ordinateur, puis j'ai exploré le développement, le réseau, la cybersécurité et bien d'autres choses jusqu'à trouver ce que j'aime : comprendre, construire et expérimenter.",
+    "paragraph2": "Grâce à mes stages et à mon investissement personnel, j'ai pu toucher à des domaines variés comme la conception de sites web, la virtualisation ou encore la gestion de serveurs. Je poursuis aujourd'hui mon parcours en préparant une entrée en école d'ingénieur à JUNIA ISEN en alternance avec l'envie de contribuer à des projets concrets, utiles et bien pensés.",
+    "paragraph3": "En-dehors de tout ça, je profite de mon temps libre pour faire du modélisme (surtout du drone FPV), bidouiller de l'électronique ou monter les PC de mes amis."
   },
-  "notFound": {
-    "pageNotFound": "Page non trouvée",
-    "backHome": "Retour à l'accueil"
+  "contact": {
+    "title": "Contactez-moi",
+    "description": "Actuellement à la recherche d'une alternance pour intégrer une école d'ingénieur, je serais ravie d'échanger avec vous. Que ce soit pour une opportunité, une question ou simplement discuter, n'hésitez pas à me contacter !",
+    "sendMessage": "Écrire un message",
+    "aria": {
+      "copyEmail": "Copier l'adresse email"
+    }
   },
   "home": {
     "subtitle": "Future ingénieure du numérique",
@@ -26,11 +26,19 @@
       "viewLinkedin": "Voir mon profil LinkedIn"
     }
   },
-  "about": {
-    "title": "À propos",
-    "paragraph1": "Salut, je suis Alex, diplômée d'un BTS CIEL spécialisé en cybersécurité, informatique et réseaux. Curieuse, sérieuse et toujours motivée par les défis techniques, je suis passionnée par tout ce qui touche au numérique. J'ai commencé par monter mon propre ordinateur, puis j'ai exploré le développement, le réseau, la cybersécurité et bien d'autres choses jusqu'à trouver ce que j'aime : comprendre, construire et expérimenter.",
-    "paragraph2": "Grâce à mes stages et à mon investissement personnel, j'ai pu toucher à des domaines variés comme la conception de sites web, la virtualisation ou encore la gestion de serveurs. Je poursuis aujourd'hui mon parcours en préparant une entrée en école d'ingénieur à JUNIA ISEN en alternance avec l'envie de contribuer à des projets concrets, utiles et bien pensés.",
-    "paragraph3": "En-dehors de tout ça, je profite de mon temps libre pour faire du modélisme (surtout du drone FPV), bidouiller de l'électronique ou monter les PC de mes amis."
+  "nav": {
+    "home": "Accueil",
+    "about": "À propos",
+    "projects": "Projets",
+    "contact": "Contact",
+    "aria": {
+      "openMenu": "Ouvrir le menu de navigation",
+      "closeMenu": "Fermer le menu de navigation"
+    }
+  },
+  "notFound": {
+    "pageNotFound": "Page non trouvée",
+    "backHome": "Retour à l'accueil"
   },
   "projects": {
     "title": "Mes projets",
@@ -66,14 +74,6 @@
         "title": "Supervision Salle Serveurs",
         "description": "Projet de fin de première année de BTS consistant à développer un système de surveillance environnementale pour une salle de serveurs. L'application permet de collecter, stocker et visualiser la température et l'humidité."
       }
-    }
-  },
-  "contact": {
-    "title": "Contactez-moi",
-    "description": "Actuellement à la recherche d'une alternance pour intégrer une école d'ingénieur, je serais ravie d'échanger avec vous. Que ce soit pour une opportunité, une question ou simplement discuter, n'hésitez pas à me contacter !",
-    "sendMessage": "Écrire un message",
-    "aria": {
-      "copyEmail": "Copier l'adresse email"
     }
   }
 }
