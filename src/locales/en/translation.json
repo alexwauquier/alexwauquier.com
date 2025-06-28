@@ -36,6 +36,10 @@
       "closeMenu": "Close navigation menu"
     }
   },
+  "notFound": {
+    "pageNotFound": "Page not found",
+    "backHome": "Back to home"
+  },
   "projects": {
     "title": "My Projects",
     "subtitle": "Here are some of my projects",

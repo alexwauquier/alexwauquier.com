@@ -9,6 +9,10 @@
       "closeMenu": "Fermer le menu de navigation"
     }
   },
+  "notFound": {
+    "pageNotFound": "Page non trouvée",
+    "backHome": "Retour à l'accueil"
+  },
   "home": {
     "subtitle": "Future ingénieure du numérique",
     "about": "À propos",
